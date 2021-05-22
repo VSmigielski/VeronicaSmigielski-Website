@@ -179,7 +179,11 @@ nav a:hover, nav li.active a {
 }
 
 .project-description {
-    padding: 120px 60px;
+    padding: 80px 60px;
+}
+
+.margin-weather {
+    margin-top: 80px;
 }
 
 @media (max-width: 960px) {
