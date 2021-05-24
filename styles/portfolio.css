@@ -202,6 +202,7 @@ nav a:hover, nav li.active a {
 .links a {
     text-decoration: none;
     color: black;
+    font-size: 24px;
     text-align: center;
 }
 
