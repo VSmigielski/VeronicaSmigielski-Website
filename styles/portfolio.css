@@ -199,6 +199,16 @@ nav a:hover, nav li.active a {
     background-color: var(--secondary-color);
 }
 
+.links a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.links a:hover {
+    color: var(--branding-color);
+}
+
 @media (max-width: 960px) {
     .project-description {
         padding: 0;
