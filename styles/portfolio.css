@@ -189,6 +189,10 @@ nav a:hover, nav li.active a {
     margin-top: 80px;
 }
 
+.weather-index {
+    max-width: 90%;
+}
+
 .center {
     display: block;
     margin-left: auto;
