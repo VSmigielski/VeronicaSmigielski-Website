@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { contact, earlyWork, featured, projects, type Project } from './data'
+import { contact, earlyWork, education, experience, featured, projects, type Project } from './data'
 
 function Nav() {
   const [open, setOpen] = useState(false)
@@ -160,17 +160,30 @@ function About() {
       <h2>About me</h2>
       <div>
         <p>
-          I started coding through SheCodes in 2021 and kept going: client websites first, then full products. Today I
-          work mostly in React and TypeScript on top of Supabase and Postgres, and I like owning the whole slice, from
-          schema and security rules to deployment and the details of the UI.
+          I'm a full-stack developer based in San Diego with a degree in Management Information Systems. By day I'm an
+          Advanced Consultant at Akkodis, administering Veeva Vault and Planisware for enterprise clients. I also lead
+          platform engineering for Budget Quest and founded Winter in Bloom Studio, which I designed and built myself.
         </p>
         <p>
-          I care about software that stays correct when real people use it at the same time, and about interfaces that
-          explain themselves. Lately that includes AI features with clear guardrails: the model suggests, the person
-          decides, and the database enforces the rules.
+          I like owning the whole slice, from database schema and security rules to deployment and the details of the
+          UI. I care about software that stays correct when real people use it at the same time. Lately that includes
+          AI features with clear guardrails: the model suggests, the person decides, and the database enforces the
+          rules.
         </p>
+        <ol className="timeline">
+          {experience.map((e) => (
+            <li key={e.org}>
+              <div>
+                <strong>{e.role}</strong> · {e.org}
+                {e.when && <span className="when">{e.when}</span>}
+              </div>
+              <p>{e.note}</p>
+            </li>
+          ))}
+        </ol>
+        <p className="edu">{education}</p>
         <ul className="chips">
-          {['React', 'TypeScript', 'Next.js', 'Supabase', 'PostgreSQL', 'Node', 'Playwright', 'Netlify', 'Claude API'].map((s) => (
+          {['React', 'TypeScript', 'Next.js', 'Supabase', 'PostgreSQL', 'Unity', 'Java', 'PHP', 'Playwright', 'Claude API', 'Veeva Vault'].map((s) => (
             <li key={s}>{s}</li>
           ))}
         </ul>

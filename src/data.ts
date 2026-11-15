@@ -48,16 +48,16 @@ export const featured = {
 export const projects: Project[] = [
   {
     id: 'budget-quest',
-    kicker: 'Learning game · live product',
+    kicker: 'Associate Platform Engineer & Operations · live product',
     title: 'Budget Quest',
     summary:
       'A fantasy adventure that teaches kids in grades 2–12 real money skills. Students earn gold through jobs, plan for bills, save toward rewards and face consequences like the Debt Dragon, a boss that grows with every missed payment. Parents and teachers set the jobs and rewards and follow progress from their own dashboards.',
     points: [
+      'I lead development, architecture, testing and deployment of the web platform and its Unity games',
       'Separate experiences for kids, parents, classrooms and financial-institution sponsors',
       'Story-driven levels, from the Crystal Vault budgeting game to the Debt Temple boss fight',
-      'A no-sign-up demo so anyone can play a level in a minute',
     ],
-    stack: ['React', 'TypeScript', 'Supabase', 'Game design'],
+    stack: ['React', 'TypeScript', 'Supabase', 'Unity', 'Game design'],
     image: '/img/budget-quest-site.webp',
     imageAlt: 'Budget Quest home page for parents, with the parent dashboard',
     links: [
@@ -67,10 +67,10 @@ export const projects: Project[] = [
   },
   {
     id: 'winterinbloom',
-    kicker: 'Creator platform',
+    kicker: 'Founder & CEO · creator platform',
     title: 'Winter in Bloom Studio',
     summary:
-      'An invite-only marketplace for independent audio creators: profiles, audio uploads with moderation, direct messages, wishlists, support tickets and a full staff admin area.',
+      'I founded, designed and built this invite-only marketplace for independent audio creators: profiles, audio uploads with moderation, direct messages, wishlists, support tickets and a full staff admin area. I also handle the launch side: payments, identity verification, compliance and security.',
     points: [
       '50+ Supabase migrations with row-level security throughout',
       'Unit and end-to-end tests (Vitest, Playwright), Sentry, uptime monitoring and written runbooks',
@@ -113,5 +113,15 @@ export const earlyWork: { title: string; image: string; href: string }[] = [
 export const contact = {
   email: 'veronicasmigielski@gmail.com',
   github: 'https://github.com/VSmigielski',
-  linkedin: 'https://www.linkedin.com/in/veronica-mccormick-b85025174/',
+  linkedin: 'https://www.linkedin.com/in/veronica-smigielski-b85025174/',
 }
+
+export const experience: { role: string; org: string; when?: string; note: string }[] = [
+  { role: 'Advanced Consultant', org: 'Akkodis', when: '2021 – present', note: 'System administration in Veeva Vault and Planisware for enterprise clients' },
+  { role: 'Associate Platform Engineer & Operations', org: 'Budget Quest', note: 'Platform and Unity game development, roadmap, releases and classroom rollouts' },
+  { role: 'Founder & CEO', org: 'Winter in Bloom Studio', note: 'Product, design and full-stack development of a creator marketplace' },
+  { role: 'Web Developer', org: 'Club Crochet', note: 'Custom PHP and HTML pages integrated with WordPress' },
+  { role: 'Web Developer Intern', org: 'Kids Galaxy', note: 'Company website in React' },
+]
+
+export const education = 'B.S. in Management Information Systems, Columbia College (2020) · mThree Java full-stack bootcamp and SheCodes (2021)'

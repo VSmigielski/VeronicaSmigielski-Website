@@ -122,6 +122,14 @@ main > section, .projects { max-width: var(--max); margin: 0 auto; padding: 0 24
 .about { display: grid; grid-template-columns: 1fr 2fr; gap: 48px; padding-top: 72px !important; padding-bottom: 96px !important; border-top: 1px solid var(--line); }
 .about p { font-size: 1.05rem; }
 
+.timeline { list-style: none; padding: 0; margin: 1.5em 0 1em; border-left: 2px solid var(--accent); }
+.timeline li { position: relative; padding: 0 0 18px 22px; }
+.timeline li::before { content: ''; position: absolute; left: -7px; top: 8px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); }
+.timeline strong { font-weight: 600; }
+.timeline .when { margin-left: 10px; font-size: .82rem; color: var(--accent-ink); font-weight: 500; }
+.timeline p { margin: 2px 0 0; font-size: .95rem; color: var(--ink-soft); }
+.edu { font-size: .95rem !important; color: var(--ink-soft); }
+
 /* contact */
 .contact { background: var(--ink); color: var(--bg); text-align: center; padding: 80px 24px 40px; }
 .contact p { color: #cfc9e6; }
