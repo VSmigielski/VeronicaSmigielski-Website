@@ -160,7 +160,7 @@ function About() {
       <h2>About me</h2>
       <div>
         <p>
-          I'm a full-stack developer based in San Diego with a degree in Management Information Systems. By day I'm an
+          I'm a full-stack developer based in Belgium with a degree in Management Information Systems. By day I'm an
           Advanced Consultant at Akkodis, administering Veeva Vault and Planisware for enterprise clients. I also lead
           platform engineering for Budget Quest and founded Winter in Bloom Studio, which I designed and built myself.
         </p>
