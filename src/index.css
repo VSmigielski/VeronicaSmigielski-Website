@@ -67,9 +67,11 @@ main > section, .projects { max-width: var(--max); margin: 0 auto; padding: 0 24
 .role { font-family: 'Playfair Display', serif; font-weight: 600; font-size: clamp(1.3rem, 2.5vw, 1.75rem); color: var(--accent-ink); }
 .lede { font-size: 1.08rem; color: var(--ink-soft); max-width: 62ch; }
 .hero-photo {
-  width: 100%; max-width: 420px; justify-self: end; aspect-ratio: 14 / 15; object-fit: cover;
-  border-radius: 48% 52% 40% 60% / 55% 45% 55% 45%;
-  box-shadow: 18px 18px 0 var(--accent);
+  width: 100%; max-width: 380px; height: auto; justify-self: center;
+  aspect-ratio: 1; object-fit: cover; object-position: 50% 20%;
+  border-radius: 50%;
+  border: 8px solid var(--bg);
+  box-shadow: 0 0 0 3px var(--accent), 22px 22px 0 3px color-mix(in srgb, var(--accent) 35%, transparent);
 }
 
 /* shared */
@@ -131,7 +133,10 @@ main > section, .projects { max-width: var(--max); margin: 0 auto; padding: 0 24
 @media (max-width: 860px) {
   .hero, .project, .featured-body, .about { grid-template-columns: 1fr; }
   .hero { min-height: auto; gap: 32px; }
-  .hero-photo { justify-self: start; max-width: 240px; order: -1; }
+  .hero { text-align: center; padding-top: 32px !important; }
+  .hero .lede { margin-inline: auto; }
+  .hero .actions { justify-content: center; }
+  .hero-photo { max-width: 180px; order: -1; box-shadow: 0 0 0 3px var(--accent), 10px 10px 0 3px color-mix(in srgb, var(--accent) 35%, transparent); }
   .project.flip > :first-child { order: 0; }
   .project { gap: 24px; }
   .projects { gap: 72px; }
