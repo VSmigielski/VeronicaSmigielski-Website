@@ -48,20 +48,21 @@ export const featured = {
 export const projects: Project[] = [
   {
     id: 'budget-quest',
-    kicker: 'Learning game',
-    title: 'Budget Quest & the Debt Dragon',
+    kicker: 'Learning game · live product',
+    title: 'Budget Quest',
     summary:
-      'A fantasy game that teaches young people to budget. Players fill crystal vaults across four paydays, pay bills before they are due and save for fun and the future. In the boss level, every missed payment has fed a three-headed Debt Dragon, and every good choice has made their phoenix stronger.',
+      'A fantasy adventure that teaches kids in grades 2–12 real money skills. Students earn gold through jobs, plan for bills, save toward rewards and face consequences like the Debt Dragon, a boss that grows with every missed payment. Parents and teachers set the jobs and rewards and follow progress from their own dashboards.',
     points: [
-      'Game state carries across levels, so earlier choices shape the boss fight',
-      'Standalone level prototypes, deployed separately for play-testing',
+      'Separate experiences for kids, parents, classrooms and financial-institution sponsors',
+      'Story-driven levels, from the Crystal Vault budgeting game to the Debt Temple boss fight',
+      'A no-sign-up demo so anyone can play a level in a minute',
     ],
-    stack: ['React', 'TypeScript', 'Game design'],
-    image: '/img/debt-dragon.webp',
-    imageAlt: 'Debt Dragon boss level with phoenix forms and a three-headed dragon',
+    stack: ['React', 'TypeScript', 'Supabase', 'Game design'],
+    image: '/img/budget-quest-site.webp',
+    imageAlt: 'Budget Quest home page for parents, with the parent dashboard',
     links: [
-      { label: 'Play the Crystal Vault', href: 'https://budget-quest-crystal-vault.netlify.app' },
-      { label: 'Face the Debt Dragon', href: 'https://debt-dragon-prototype.netlify.app' },
+      { label: 'Visit budget-quest.com', href: 'https://budget-quest.com/' },
+      { label: 'Try the 60-second demo', href: 'https://budget-quest.com/demo' },
     ],
   },
   {
