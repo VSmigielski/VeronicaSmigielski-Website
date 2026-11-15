@@ -77,8 +77,8 @@ export const projects: Project[] = [
       'Feature flags to ship commissions and payments only when they are ready',
     ],
     stack: ['Next.js', 'React', 'TypeScript', 'Supabase', 'Railway'],
-    image: '',
-    imageAlt: '',
+    image: '/img/winterinbloom.webp',
+    imageAlt: 'Winter in Bloom Studio home page: Audio that feels like winter. Blooming.',
     links: [{ label: 'Visit the studio', href: 'https://winterinbloom.studio' }],
   },
   {
